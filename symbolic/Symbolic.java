@@ -1,5 +1,7 @@
 package symbolic;
+import java.util.*;
 import java.io.IOException;
+import java.util.HashMap;
 
 public class Symbolic {
 
@@ -15,6 +17,7 @@ public class Symbolic {
     }
 
     public static Sexpr sin(Sexpr arg) {
+        System.out.println("SIN: " + arg);
         return (isvariableOrConstant(arg)) ?
                 new Constant(Math.sin(arg.getValue())) : new Sin(arg);
     }
@@ -59,17 +62,19 @@ public class Symbolic {
                 new Constant(arg1.getValue() / arg2.getValue()) : new Division(arg1, arg2);
     }
 
-    public static Sexpr assignment(Sexpr arg1, Sexpr arg2) {
-        return (isvariableOrConstant(arg1, arg2)) ?
-                new Constant(arg1.getValue() - arg2.getValue()) : new Assignment(arg1, arg2);
+    public static Sexpr assignment(Sexpr arg1, Sexpr arg2, HashMap<String, Sexpr> variables) {
+        System.out.println(arg1 + ", " + arg2);
+        if (arg2.isVariable()) {
+            variables.put(arg2.getName(), arg1);
+        }
+        return new Assignment(arg1, arg2);
     }
 
-    //TODO: Fixa denna!
-    public static Sexpr variable(Sexpr arg) {
+    public static Sexpr variable(Sexpr arg, HashMap<String, Sexpr> variables) {
         if (!arg.isVariable()) {
             throw new RuntimeException("Expected variable");
         }
-        return (arg);
+        return (!variables.isEmpty()) ? variables.get(arg.getName()) : arg;
     }
 
     //TODO: Fixa denna!

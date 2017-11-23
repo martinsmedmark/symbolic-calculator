@@ -1,4 +1,5 @@
 package symbolic;
+import java.io.IOException;
 import java.util.HashMap;
 
 public class Assignment extends Binary {
@@ -9,13 +10,13 @@ public class Assignment extends Binary {
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.assignment(this, this);
+        return Symbolic.assignment(left.eval(variables), right, variables);
     }
 
     public String getName() {
         return this.name;
     }
     public Double getValue() {
-        return 42.0;
+        return left.getValue();
     }
 }

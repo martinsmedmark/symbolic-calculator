@@ -14,11 +14,10 @@ public class Sin extends Unary {
     }
     */
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return this;
+        return Symbolic.sin(argument.eval(variables));
     }
 
     public String getName() {
-        System.out.println("INNIFRÅN SIN ARGUMENT: " + this.argument);
         return this.name;
     }
 }

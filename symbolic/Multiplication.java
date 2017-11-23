@@ -1,4 +1,5 @@
 package symbolic;
+import java.io.IOException;
 import java.util.HashMap;
 
 public class Multiplication extends Binary {
@@ -10,13 +11,13 @@ public class Multiplication extends Binary {
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.multiplication(this, this);
+        return Symbolic.multiplication(this.left, this.right);
     }
 
     public String getName() {
         return this.name;
     }
     public Double getValue() {
-        return 42.0;
+        return this.left.getValue() * this.right.getValue();
     }
 }

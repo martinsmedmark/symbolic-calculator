@@ -4,7 +4,8 @@ import java.io.IOException;
 
 public class Variable extends Atom {
     private String ident;
-    private String name = "=";
+    private String name = "Variable";
+    private HashMap<String, Sexpr> variables;
 
     public Variable(String s) {
         this.ident = s;
@@ -13,13 +14,16 @@ public class Variable extends Atom {
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.variable(this);
+        this.variables = variables;
+        return Symbolic.variable(this, variables);
     }
 
     public String getName() {
         return this.ident;
     }
+
+    //TODO: Trow Exception here?
     public Double getValue() {
-        return 42.0;
+        return 0.0;
     }
 }

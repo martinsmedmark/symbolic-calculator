@@ -1,11 +1,10 @@
 package symbolic;
 
+import java.io.IOException;
 import java.util.HashMap;
 
 public class Subtraction extends Binary {
     private String name = "-";
-    private Sexpr left;
-    private Sexpr right;
 
     public Subtraction(Sexpr l, Sexpr r) {
         super(l, r);
@@ -13,13 +12,13 @@ public class Subtraction extends Binary {
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.subtraction(this, this);
+        return Symbolic.subtraction(this.left, this.right);
     }
 
     public String getName() {
         return this.name;
     }
     public Double getValue() {
-        return 42.0;
+        return this.left.getValue() - this.right.getValue();
     }
 }
