@@ -18,6 +18,9 @@ public class Parser {
     }
 
     public Sexpr statement() throws IOException {
+        st.nextToken();
+        st.pushBack();
+
         Sexpr expr = expression();
         if(st.nextToken() == st.TT_WORD) {
             if (st.sval.equals("quit")) {
@@ -32,7 +35,8 @@ public class Parser {
     }
 
     public Sexpr assignment() throws IOException {
-        checkIfFirstStatement();
+        st.nextToken();
+        st.pushBack();
         System.out.println("Assignment");
 
         Sexpr expr = expression();
@@ -48,8 +52,10 @@ public class Parser {
     }
 
     public Sexpr expression() throws IOException {
-        System.out.println("Expression");
+        System.out.println("Expression: " + st.toString());
         Sexpr sum = term();
+        System.out.println("hello");
+        st.nextToken();
         while (st.ttype == '+' || st.ttype == '-') {
             int operation = st.ttype;
             st.nextToken();
@@ -77,21 +83,20 @@ public class Parser {
     }
 
     public Sexpr primary() throws IOException {
+        st.nextToken();
+        st.pushBack();
         System.out.println("Primary: " + st.toString());
         Sexpr result;
         if (st.ttype == st.TT_EOL) {
             throw new SyntaxErrorException("Unfinished expression");
         }
         if (st.nextToken() != '(') {
-            st.pushBack();
-            if (st.nextToken() == st.TT_NUMBER) {
-                st.pushBack();
+            //st.pushBack();
+            if (st.ttype == st.TT_NUMBER) {
                 result = number();
             } else if (Arrays.asList(unary).contains(st.sval)) {
-                st.pushBack();
                 result = unary();
             } else {
-                st.pushBack();
                 result = assignment();
             }
 
@@ -105,14 +110,14 @@ public class Parser {
     }
 
     private Sexpr unary() throws IOException {
-        System.out.println("Unary");
-        if (st.nextToken() != st.TT_WORD) {
+        System.out.println("Unary: " + st.toString());
+        if (st.ttype != st.TT_WORD) {
             throw new SyntaxErrorException("Expected unary");
         }
-        st.pushBack();
 
         String sval = st.sval;
         Sexpr unary;
+        st.nextToken();
         switch (sval) {
             case "-":
                 unary = new Negation(primary());
@@ -133,12 +138,11 @@ public class Parser {
     }
 
     public Sexpr number() throws IOException {
-        checkIfFirstStatement();
         System.out.println("Number " + st.toString());
-        if (st.nextToken() != st.TT_NUMBER) {
+        if (st.ttype != st.TT_NUMBER) {
             throw new SyntaxErrorException("Expected number");
         }
-        st.pushBack();
+        //st.pushBack();
         return new Constant(st.nval);
     }
 

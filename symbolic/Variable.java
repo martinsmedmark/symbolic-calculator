@@ -17,7 +17,7 @@ public class Variable extends Atom {
     }
 
     public String getName() {
-        return this.name;
+        return this.ident;
     }
     public Double getValue() {
         return 42.0;

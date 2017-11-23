@@ -2,7 +2,7 @@ package symbolic;
 import java.util.HashMap;
 
 public class Sin extends Unary {
-    private String name = "sin";
+    private String name = "Sin";
 
     public Sin(Sexpr a) {
         super(a);

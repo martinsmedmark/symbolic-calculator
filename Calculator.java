@@ -8,9 +8,9 @@ public class Calculator {
         Parser p = new Parser();
         HashMap<String, Sexpr> variables = new HashMap<String, Sexpr>();
 
+        System.out.print("? ");
         try {
-            System.out.print("? ");
-            Sexpr e = p.primary();
+            Sexpr e = p.statement();
 
             System.out.println("Inläst uttryck: " + e);
             //System.out.println(e.getName());
