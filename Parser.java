@@ -13,15 +13,12 @@ public class Parser {
     public Parser() {
         st = new StreamTokenizer(System.in);
         st.ordinaryChar('-');
+        st.ordinaryChar('/');
         st.eolIsSignificant(true);
         //st.wordChars('-', '-');
     }
 
     public Sexpr statement() throws IOException {
-        st.nextToken();
-        st.pushBack();
-
-        Sexpr expr = expression();
         if(st.nextToken() == st.TT_WORD) {
             if (st.sval.equals("quit")) {
                 return new Quit();
@@ -29,49 +26,52 @@ public class Parser {
                 return new Vars();
             }
         }
-
         st.pushBack();
         return assignment();
     }
 
     public Sexpr assignment() throws IOException {
-        st.nextToken();
-        st.pushBack();
-        System.out.println("Assignment");
-
+        System.out.println("Assignment: " + st.toString());
         Sexpr expr = expression();
-        while (st.nextToken() == '=') {
-            if (st.nextToken() != st.TT_WORD) {
-                throw new SyntaxErrorException("Expected variable");
-            }
-            Sexpr var = new Variable(st.sval);
-            new Assignment(expr, var);
+        st.nextToken();
+        while (st.ttype == '=') {
+            Sexpr var = identifier();
+            st.nextToken();
+            expr = new Assignment(expr, var);
         }
         st.pushBack();
         return expr;
     }
 
-    public Sexpr expression() throws IOException {
+
+    public Sexpr expression() throws IOException{
         System.out.println("Expression: " + st.toString());
         Sexpr sum = term();
-        System.out.println("hello");
         st.nextToken();
-        while (st.ttype == '+' || st.ttype == '-') {
-            int operation = st.ttype;
+        while (st.ttype == '+' || st.ttype == '-'){
+            if(st.ttype == '+'){
+                System.out.println("Addition");
+                sum = new Addition (sum, term());
+            }else{
+                sum = new Subtraction(sum, term());
+            }
             st.nextToken();
-            sum = (operation == '+') ? new Addition(sum, term()) : new Subtraction(sum, term());
         }
         st.pushBack();
         return sum;
     }
 
     private Sexpr term() throws IOException {
-        System.out.println("Term");
+        System.out.println("Term: " + st.toString());
         Sexpr prod = factor();
-        while (st.nextToken() == '*' || st.nextToken() == '/') {
-            int operation = st.ttype;
-
-            prod = (operation == '*') ? new Multiplication(prod, factor()) : new Division(prod, factor());
+        st.nextToken();
+        while (st.ttype == '*' || st.ttype == '/') {
+            if(st.ttype == '*') {
+                prod = new Multiplication(prod, factor());
+            } else {
+                prod = new Division(prod, factor());
+            }
+            st.nextToken();
         }
         st.pushBack();
         return prod;
@@ -82,42 +82,37 @@ public class Parser {
         return primary();
     }
 
-    public Sexpr primary() throws IOException {
-        st.nextToken();
-        st.pushBack();
+    private Sexpr primary() throws IOException{
         System.out.println("Primary: " + st.toString());
         Sexpr result;
-        if (st.ttype == st.TT_EOL) {
-            throw new SyntaxErrorException("Unfinished expression");
-        }
-        if (st.nextToken() != '(') {
-            //st.pushBack();
+        if(st.nextToken() != '('){
+            st.pushBack();
             if (st.ttype == st.TT_NUMBER) {
                 result = number();
             } else if (Arrays.asList(unary).contains(st.sval)) {
                 result = unary();
             } else {
-                result = assignment();
+                result = identifier();
             }
-
-        } else {
+        }else{
             result = assignment();
-            if (st.nextToken() != ')') {
+            if(st.nextToken() != ')'){
                 throw new SyntaxErrorException("expected ')'");
             }
         }
         return result;
     }
 
+
     private Sexpr unary() throws IOException {
         System.out.println("Unary: " + st.toString());
         if (st.ttype != st.TT_WORD) {
             throw new SyntaxErrorException("Expected unary");
         }
-
+        st.nextToken();
         String sval = st.sval;
         Sexpr unary;
-        st.nextToken();
+        System.out.println("UNARY: " + st.toString());
         switch (sval) {
             case "-":
                 unary = new Negation(primary());
@@ -137,31 +132,30 @@ public class Parser {
         return unary;
     }
 
-    public Sexpr number() throws IOException {
-        System.out.println("Number " + st.toString());
-        if (st.ttype != st.TT_NUMBER) {
+    private Sexpr identifier() throws IOException{
+        System.out.println("Identifier: " + st.toString());
+        if(st.nextToken() != st.TT_WORD){
+            throw new SyntaxErrorException("Expected identifier");
+        }
+        return new Variable(st.sval);
+    }
+
+    private Sexpr number() throws IOException{
+        System.out.println("Number: " + st.toString());
+        if(st.nextToken() != st.TT_NUMBER){
             throw new SyntaxErrorException("Expected number");
         }
-        //st.pushBack();
         return new Constant(st.nval);
     }
+}
 
-    public class SyntaxErrorException extends RuntimeException {
-        public SyntaxErrorException() {
-            super();
-        }
-
-        public SyntaxErrorException(String msg) {
-            super(msg);
-        }
-
+class SyntaxErrorException extends RuntimeException {
+    public SyntaxErrorException() {
+        super();
     }
 
-    private void checkIfFirstStatement() throws IOException {
-        if (st.nextToken() == st.TT_EOF) {
-            throw new SyntaxErrorException("Empty statement");
-        }
-        st.pushBack();
-        st.pushBack();
+    public SyntaxErrorException(String msg) {
+        super(msg);
     }
+
 }

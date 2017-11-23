@@ -18,6 +18,7 @@ public class Sin extends Unary {
     }
 
     public String getName() {
+        System.out.println("INNIFRÅN SIN ARGUMENT: " + this.argument);
         return this.name;
     }
 }

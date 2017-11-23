@@ -15,7 +15,7 @@ public class Calculator {
             System.out.println("Inläst uttryck: " + e);
             //System.out.println(e.getName());
 
-        } catch (Parser.SyntaxErrorException e) {
+        } catch (SyntaxErrorException e) {
             System.out.print("Syntax Error: ");
             System.out.println(e.getMessage());
         }
