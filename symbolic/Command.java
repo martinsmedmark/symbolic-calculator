@@ -3,7 +3,8 @@ package symbolic;
 public abstract class Command extends Sexpr {
     public Command() {
         this.isConstant = false;
-        this.isVariable = true;
+        this.isVariable = false;
+        this.priority = 0;
     }
 
     public Double getValue() {

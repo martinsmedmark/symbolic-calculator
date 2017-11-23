@@ -8,6 +8,7 @@ public class Addition extends Binary {
 
     public Addition(Sexpr l, Sexpr r) {
         super(l, r);
+        this.priority = 1;
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {

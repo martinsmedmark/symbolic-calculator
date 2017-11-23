@@ -9,6 +9,7 @@ public class Subtraction extends Binary {
 
     public Subtraction(Sexpr l, Sexpr r) {
         super(l, r);
+        this.priority = 1;
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {

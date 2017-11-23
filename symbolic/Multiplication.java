@@ -6,6 +6,7 @@ public class Multiplication extends Binary {
 
     public Multiplication(Sexpr l, Sexpr r) {
         super(l, r);
+        this.priority = 0;
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {

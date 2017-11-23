@@ -4,6 +4,7 @@ import java.util.HashMap;
 public abstract class Sexpr {
     protected boolean isConstant;
     protected boolean isVariable;
+    protected int priority;
 
     public Sexpr() {
 
@@ -17,7 +18,7 @@ public abstract class Sexpr {
     public boolean isConstant() {
         return this.isConstant;
     }
-
+    public int priority() { return this.priority; }
     public boolean isVariable() {
         return this.isVariable;
     }

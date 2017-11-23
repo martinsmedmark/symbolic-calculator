@@ -6,6 +6,7 @@ public abstract class Unary extends Sexpr {
     public Unary(Sexpr a) {
         this.isConstant = false;
         this.isVariable = false;
+        this.priority = 0;
         argument = a;
     }
 
