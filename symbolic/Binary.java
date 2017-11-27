@@ -17,11 +17,9 @@ public abstract class Binary extends Sexpr {
 
     @Override
     public String toString() {
-        String rep = "";
-        if (left.priority() == right.priority()) {
+        if (left.priority() <= right.priority()) {
             return left.toString() + getName() + right.toString();
         }
         return "(" + left.toString() + getName() + right.toString() + ")";
-
     }
 }

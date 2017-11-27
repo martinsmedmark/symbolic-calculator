@@ -5,7 +5,6 @@ public class Vars extends Command {
     private String name = "Vars";
 
     public Vars() {
-
     }
 
     public String getName() {
@@ -15,4 +14,6 @@ public class Vars extends Command {
     public Sexpr eval(HashMap<String, Sexpr> variables) {
         return Symbolic.vars(this);
     }
+
+    
 }

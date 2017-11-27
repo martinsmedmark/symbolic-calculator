@@ -6,15 +6,15 @@ public class Calculator {
     public static HashMap<String, Sexpr> variables = new HashMap<String, Sexpr>();
 
     public static void main(String[] args) throws IOException {
-        Parser p = new Parser();
-
         while (true) {
+            Parser p = new Parser();
+
             System.out.print("? ");
             try {
                 Sexpr e = p.statement();
 
                 if (e.getName().equals("Quit")) {
-                    System.out.println("Hejdå!");
+                    System.out.println("\n Hejdå!");
                     System.exit(0);
                 } else if (e.getName().equals("Vars")) {
                     for (Map.Entry<String, Sexpr> entry : variables.entrySet()) {
@@ -25,8 +25,7 @@ public class Calculator {
                 }
 
                 e = e.eval(variables);
-                Double d = e.getValue();
-                //System.out.println(d);
+                System.out.println("Evaluerat: " + e);
 
             } catch (SyntaxErrorException e) {
                 System.out.print("Syntax Error: ");

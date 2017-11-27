@@ -9,7 +9,7 @@ public class Addition extends Binary {
         super(l, r);
         this.priority = 1;
 
-        this.logMessage(l.toString() + this.name + r.toString());
+        //this.logMessage(l.toString() + this.name + r.toString());
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {

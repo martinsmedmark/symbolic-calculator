@@ -17,7 +17,6 @@ public class Symbolic {
     }
 
     public static Sexpr sin(Sexpr arg) {
-        System.out.println("SIN: " + arg);
         return (isvariableOrConstant(arg)) ?
                 new Constant(Math.sin(arg.getValue())) : new Sin(arg);
     }
@@ -63,7 +62,6 @@ public class Symbolic {
     }
 
     public static Sexpr assignment(Sexpr arg1, Sexpr arg2, HashMap<String, Sexpr> variables) {
-        System.out.println(arg1 + ", " + arg2);
         if (arg2.isVariable()) {
             variables.put(arg2.getName(), arg1);
         }
