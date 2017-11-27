@@ -8,11 +8,6 @@ public class Sin extends Unary {
         super(a);
     }
 
-    /*
-    public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.sin(argument.eval(variables));
-    }
-    */
     public Sexpr eval(HashMap<String, Sexpr> variables) {
         return Symbolic.sin(argument.eval(variables));
     }

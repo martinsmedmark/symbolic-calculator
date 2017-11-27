@@ -13,6 +13,7 @@ public abstract class Sexpr {
 
     public abstract String getName();
     public abstract Double getValue();
+    public abstract void logMessage(String message);
 
     public abstract Sexpr eval(HashMap<String, Sexpr> variables);
 

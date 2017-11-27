@@ -8,6 +8,8 @@ public class Addition extends Binary {
     public Addition(Sexpr l, Sexpr r) {
         super(l, r);
         this.priority = 1;
+
+        this.logMessage(l.toString() + this.name + r.toString());
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {

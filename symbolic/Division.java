@@ -10,6 +10,8 @@ public class Division extends Binary {
     public Division(Sexpr l, Sexpr r) {
         super(l, r);
         this.priority = 0;
+
+        this.logMessage(l.toString() + this.name + r.toString());
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {

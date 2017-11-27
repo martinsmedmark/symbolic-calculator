@@ -11,6 +11,10 @@ public abstract class Binary extends Sexpr {
         this.right = right;
     }
 
+    public void logMessage(String message) {
+        System.out.println(message);
+    }
+
     @Override
     public String toString() {
         String rep = "";
