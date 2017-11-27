@@ -14,7 +14,7 @@ public class Subtraction extends Binary {
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.subtraction(this.left, this.right);
+        return Symbolic.subtraction(this.left.eval(variables), this.right.eval(variables));
     }
 
     public String getName() {

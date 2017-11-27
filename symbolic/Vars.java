@@ -14,6 +14,4 @@ public class Vars extends Command {
     public Sexpr eval(HashMap<String, Sexpr> variables) {
         return Symbolic.vars(this);
     }
-
-    
 }

@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2811dd10-be67-4021-8eb9-c03b5b12a34e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Calculator.java" afterPath="$PROJECT_DIR$/Calculator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Addition.java" afterPath="$PROJECT_DIR$/symbolic/Addition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Binary.java" afterPath="$PROJECT_DIR$/symbolic/Binary.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Command.java" afterPath="$PROJECT_DIR$/symbolic/Command.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Division.java" afterPath="$PROJECT_DIR$/symbolic/Division.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Multiplication.java" afterPath="$PROJECT_DIR$/symbolic/Multiplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Subtraction.java" afterPath="$PROJECT_DIR$/symbolic/Subtraction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Symbolic.java" afterPath="$PROJECT_DIR$/symbolic/Symbolic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Variable.java" afterPath="$PROJECT_DIR$/symbolic/Variable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Vars.java" afterPath="$PROJECT_DIR$/symbolic/Vars.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Sexpr.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symbolic/Sexpr.java">
+      <file leaf-file-name="Variable.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/symbolic/Variable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="453">
+              <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,24 +40,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symbolic/Sin.java">
+      <file leaf-file-name="Constant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symbolic/Constant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="506">
+              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#471#472#0" expanded="true" />
+                <element signature="e#504#505#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constant.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symbolic/Constant.java">
+      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="3427">
+              <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
               <folding>
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#504#505#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#4455#4456#0" expanded="true" />
+                <element signature="e#4481#4482#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,31 +72,11 @@
       <file leaf-file-name="Symbolic.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symbolic/Symbolic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1258">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="248">
+              <caret line="43" column="58" lean-forward="false" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vars.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/symbolic/Vars.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Binary.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symbolic/Binary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -114,22 +99,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/symbolic/Variable.java" />
         <option value="$PROJECT_DIR$/symbolic/Assignment.java" />
         <option value="$PROJECT_DIR$/symbolic/Sin.java" />
         <option value="$PROJECT_DIR$/symbolic/Unary.java" />
         <option value="$PROJECT_DIR$/symbolic/Atom.java" />
         <option value="$PROJECT_DIR$/Parser.java" />
         <option value="$PROJECT_DIR$/symbolic/Sexpr.java" />
-        <option value="$PROJECT_DIR$/symbolic/Symbolic.java" />
+        <option value="$PROJECT_DIR$/Calculator.java" />
+        <option value="$PROJECT_DIR$/symbolic/Binary.java" />
+        <option value="$PROJECT_DIR$/symbolic/Vars.java" />
+        <option value="$PROJECT_DIR$/symbolic/Command.java" />
         <option value="$PROJECT_DIR$/symbolic/Subtraction.java" />
         <option value="$PROJECT_DIR$/symbolic/Addition.java" />
         <option value="$PROJECT_DIR$/symbolic/Multiplication.java" />
         <option value="$PROJECT_DIR$/symbolic/Division.java" />
-        <option value="$PROJECT_DIR$/Calculator.java" />
-        <option value="$PROJECT_DIR$/symbolic/Command.java" />
-        <option value="$PROJECT_DIR$/symbolic/Binary.java" />
-        <option value="$PROJECT_DIR$/symbolic/Vars.java" />
+        <option value="$PROJECT_DIR$/symbolic/Constant.java" />
+        <option value="$PROJECT_DIR$/symbolic/Symbolic.java" />
+        <option value="$PROJECT_DIR$/symbolic/Variable.java" />
       </list>
     </option>
   </component>
@@ -159,6 +145,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -181,9 +168,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,12 +289,13 @@
       <workItem from="1511424808632" duration="2355000" />
       <workItem from="1511429108859" duration="7962000" />
       <workItem from="1511455286333" duration="7541000" />
-      <workItem from="1511770503048" duration="8353000" />
+      <workItem from="1511770503048" duration="11512000" />
+      <workItem from="1511799795938" duration="88000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26211000" />
+    <option name="totallyTimeSpent" value="29458000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
@@ -355,12 +342,55 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/symbolic/Variable.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3427">
+          <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4455#4456#0" expanded="true" />
+            <element signature="e#4481#4482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Symbolic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="43" column="58" lean-forward="false" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Variable.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#627#628#0" expanded="false" />
-            <element signature="e#653#654#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -377,10 +407,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-          <folding>
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -400,8 +427,6 @@
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -422,7 +447,8 @@
           <caret line="138" column="5" lean-forward="true" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#229#246#0" expanded="true" />
+            <element signature="e#4455#4456#0" expanded="true" />
+            <element signature="e#4481#4482#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -434,6 +460,8 @@
           <folding>
             <element signature="e#80#81#0" expanded="true" />
             <element signature="e#113#114#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -444,8 +472,6 @@
           <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#627#628#0" expanded="false" />
-            <element signature="e#653#654#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -454,10 +480,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -467,7 +490,8 @@
           <caret line="130" column="5" lean-forward="false" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#229#246#0" expanded="true" />
+            <element signature="e#4455#4456#0" expanded="true" />
+            <element signature="e#4481#4482#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -486,7 +510,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -506,19 +533,13 @@
           <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#229#246#0" expanded="true" />
+            <element signature="e#4455#4456#0" expanded="true" />
+            <element signature="e#4481#4482#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser_tester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser_tester.java" />
     <entry file="file://$PROJECT_DIR$/symbolic/Division.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -526,23 +547,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Variable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#627#628#0" expanded="false" />
-            <element signature="e#653#654#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/symbolic/Unary.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -559,37 +567,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser_tester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-574">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/#Addition.java#">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser_tester.java" />
+    <entry file="file://$PROJECT_DIR$/symbolic/#Addition.java#" />
     <entry file="file://$PROJECT_DIR$/symbolic/Unary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Exp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-          <folding>
-            <element signature="e#280#281#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -607,67 +591,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Addition.java">
+    <entry file="file://$PROJECT_DIR$/symbolic/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="368">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Negation.java">
+    <entry file="file://$PROJECT_DIR$/symbolic/Vars.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="299">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Multiplication.java">
+    <entry file="file://$PROJECT_DIR$/symbolic/Subtraction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
+        <state relative-caret-position="414">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#229#246#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -680,31 +631,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Division.java">
+    <entry file="file://$PROJECT_DIR$/symbolic/Negation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="69">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Subtraction.java">
+    <entry file="file://$PROJECT_DIR$/symbolic/Division.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="414">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Constant.java">
+    <entry file="file://$PROJECT_DIR$/symbolic/Log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="69">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Exp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
           <folding>
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -717,34 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Symbolic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1258">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Sexpr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/symbolic/Binary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -753,11 +681,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Vars.java">
+    <entry file="file://$PROJECT_DIR$/symbolic/Addition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="138">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Sexpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Multiplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3427">
+          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4455#4456#0" expanded="true" />
+            <element signature="e#4481#4482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Symbolic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="43" column="58" lean-forward="false" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Variable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

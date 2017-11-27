@@ -11,5 +11,9 @@ public abstract class Command extends Sexpr {
         return 42.0;
     }
 
+    public String toString() {
+        return this.getName();
+    }
+
     public void logMessage(String message) {}
 }

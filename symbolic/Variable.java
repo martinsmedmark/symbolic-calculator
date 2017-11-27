@@ -22,8 +22,8 @@ public class Variable extends Atom {
         return this.ident;
     }
 
-    //TODO: Trow Exception here?
-    public Double getValue() {
-        return 0.0;
+    //TODO: Trow Exception here? CONTINUE HERE!!! fråga om denna ska kasta exception eller returnera någonting av värde, samma med alla andra getvalue() metoder.
+    public Double getValue()  {
+
     }
 }

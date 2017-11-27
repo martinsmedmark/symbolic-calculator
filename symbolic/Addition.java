@@ -13,7 +13,7 @@ public class Addition extends Binary {
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.addition(left, right);
+        return Symbolic.addition(left.eval(variables), right.eval(variables));
     }
 
     public String getName() {

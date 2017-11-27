@@ -13,7 +13,7 @@ public class Multiplication extends Binary {
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.multiplication(this.left, this.right);
+        return Symbolic.multiplication(this.left.eval(variables), this.right.eval(variables));
     }
 
     public String getName() {

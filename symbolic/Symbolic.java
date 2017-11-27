@@ -72,10 +72,14 @@ public class Symbolic {
         if (!arg.isVariable()) {
             throw new RuntimeException("Expected variable");
         }
-        return (!variables.isEmpty()) ? variables.get(arg.getName()) : arg;
+
+        if (!variables.isEmpty()) {
+            Sexpr e = variables.get(arg.getName());
+            return (e != null) ? e : arg;
+        }
+        return arg;
     }
 
-    //TODO: Fixa denna!
     public static Sexpr constant(Sexpr arg) {
         if (!arg.isConstant()) {
             throw new RuntimeException("Expected constant");
