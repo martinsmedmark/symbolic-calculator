@@ -1,5 +1,5 @@
 clean:
-	rm -rf *.class *~
+	rm -rf *.class *~ symbolic/*.class
 
 all:
 	javac *.java
@@ -15,6 +15,5 @@ git add: clean
 
 git: git commit
 	git push
-	
 
 

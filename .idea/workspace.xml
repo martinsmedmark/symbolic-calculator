@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2811dd10-be67-4021-8eb9-c03b5b12a34e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Parser.class" afterPath="$PROJECT_DIR$/Parser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxErrorException.class" afterPath="$PROJECT_DIR$/SyntaxErrorException.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Parser_tester.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/symbolic/#Addition.java#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/symbolic/#Binary.java#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/symbolic/#Multiplication.java#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/symbolic/#Variable.java#" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Addition.class" afterPath="$PROJECT_DIR$/symbolic/Addition.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Atom.class" afterPath="$PROJECT_DIR$/symbolic/Atom.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Binary.class" afterPath="$PROJECT_DIR$/symbolic/Binary.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Command.class" afterPath="$PROJECT_DIR$/symbolic/Command.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Division.class" afterPath="$PROJECT_DIR$/symbolic/Division.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Multiplication.class" afterPath="$PROJECT_DIR$/symbolic/Multiplication.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Sexpr.class" afterPath="$PROJECT_DIR$/symbolic/Sexpr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Sin.class" afterPath="$PROJECT_DIR$/symbolic/Sin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Subtraction.class" afterPath="$PROJECT_DIR$/symbolic/Subtraction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Unary.class" afterPath="$PROJECT_DIR$/symbolic/Unary.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Addition.java" afterPath="$PROJECT_DIR$/symbolic/Addition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Atom.java" afterPath="$PROJECT_DIR$/symbolic/Atom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Binary.java" afterPath="$PROJECT_DIR$/symbolic/Binary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Command.java" afterPath="$PROJECT_DIR$/symbolic/Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Division.java" afterPath="$PROJECT_DIR$/symbolic/Division.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Multiplication.java" afterPath="$PROJECT_DIR$/symbolic/Multiplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Sexpr.java" afterPath="$PROJECT_DIR$/symbolic/Sexpr.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Sin.java" afterPath="$PROJECT_DIR$/symbolic/Sin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Subtraction.java" afterPath="$PROJECT_DIR$/symbolic/Subtraction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Unary.java" afterPath="$PROJECT_DIR$/symbolic/Unary.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Calculator.java" afterPath="$PROJECT_DIR$/Calculator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +40,8 @@
       <file leaf-file-name="Sexpr.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symbolic/Sexpr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="322">
+              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,14 +49,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Binary.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/symbolic/Binary.java">
+      <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="249">
+              <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#376#377#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Symbolic.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/symbolic/Symbolic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,10 +94,8 @@
         <option value="$PROJECT_DIR$/symbolic/Variable.java" />
         <option value="$PROJECT_DIR$/symbolic/Assignment.java" />
         <option value="$PROJECT_DIR$/symbolic/Symbolic.java" />
-        <option value="$PROJECT_DIR$/Calculator.java" />
         <option value="$PROJECT_DIR$/Parser.java" />
         <option value="$PROJECT_DIR$/symbolic/Sin.java" />
-        <option value="$PROJECT_DIR$/symbolic/Sexpr.java" />
         <option value="$PROJECT_DIR$/symbolic/Binary.java" />
         <option value="$PROJECT_DIR$/symbolic/Addition.java" />
         <option value="$PROJECT_DIR$/symbolic/Multiplication.java" />
@@ -90,6 +104,8 @@
         <option value="$PROJECT_DIR$/symbolic/Unary.java" />
         <option value="$PROJECT_DIR$/symbolic/Command.java" />
         <option value="$PROJECT_DIR$/symbolic/Atom.java" />
+        <option value="$PROJECT_DIR$/symbolic/Sexpr.java" />
+        <option value="$PROJECT_DIR$/Calculator.java" />
       </list>
     </option>
   </component>
@@ -263,12 +279,12 @@
       <workItem from="1511424808632" duration="2355000" />
       <workItem from="1511429108859" duration="7962000" />
       <workItem from="1511455286333" duration="7541000" />
-      <workItem from="1511770503048" duration="1325000" />
+      <workItem from="1511770503048" duration="4316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19183000" />
+    <option name="totallyTimeSpent" value="22174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
@@ -479,14 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser_tester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/symbolic/Log.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -533,16 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Symbolic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/symbolic/Variable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -551,17 +549,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#627#628#0" expanded="false" />
             <element signature="e#653#654#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3174">
-          <caret line="138" column="5" lean-forward="false" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#229#246#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -577,51 +564,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Sexpr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Multiplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/symbolic/Division.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="65" lean-forward="true" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Subtraction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="65" lean-forward="false" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -640,19 +587,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Unary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,13 +614,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Parser_tester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-574">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/symbolic/Binary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="e#333#334#0" expanded="true" />
             <element signature="e#376#377#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/#Addition.java#">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Unary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Subtraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="65" lean-forward="true" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Exp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+          <folding>
+            <element signature="e#280#281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Multiplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3427">
+          <caret line="149" column="53" lean-forward="false" selection-start-line="149" selection-start-column="53" selection-end-line="149" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#229#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Sexpr.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Sexpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symbolic/Symbolic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
