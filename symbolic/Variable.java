@@ -21,7 +21,7 @@ public class Variable extends Atom {
     public String getName() {
         return this.ident;
     }
-    
+
     public Double getValue()  {
         throw new RuntimeException("Trying to get value from variable");
     }

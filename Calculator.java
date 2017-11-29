@@ -6,6 +6,8 @@ public class Calculator {
     public static HashMap<String, Sexpr> variables = new HashMap<String, Sexpr>();
 
     public static void main(String[] args) throws IOException {
+        System.out.println("Welcome to the symbolic-calculator!");
+
         while (true) {
             Parser p = new Parser();
 
@@ -14,7 +16,7 @@ public class Calculator {
                 Sexpr e = p.statement();
 
                 if (e.getName().equals("Quit")) {
-                    System.out.println("\n Hejdå!");
+                    System.out.println("\n Goodbye!");
                     System.exit(0);
                 } else if (e.getName().equals("Vars")) {
                     for (Map.Entry<String, Sexpr> entry : variables.entrySet()) {
