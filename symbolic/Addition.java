@@ -19,7 +19,4 @@ public class Addition extends Binary {
     public String getName() {
         return this.name;
     }
-    public Double getValue() {
-        return this.left.getValue() + this.right.getValue();
-    }
 }

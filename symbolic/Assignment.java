@@ -16,7 +16,4 @@ public class Assignment extends Binary {
     public String getName() {
         return this.name;
     }
-    public Double getValue() {
-        return left.getValue();
-    }
 }

@@ -20,8 +20,5 @@ public class Division extends Binary {
     public String getName() {
             return this.name;
         }
-    public Double getValue() {
-        return 42.0;
-    }
 }
 

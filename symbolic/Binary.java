@@ -22,4 +22,6 @@ public abstract class Binary extends Sexpr {
         }
         return "(" + left.toString() + getName() + right.toString() + ")";
     }
+
+    public Double getValue() { throw new RuntimeException("Trying to get value from a binary"); }
 }
