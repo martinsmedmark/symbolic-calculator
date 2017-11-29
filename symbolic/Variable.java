@@ -24,6 +24,6 @@ public class Variable extends Atom {
 
     //TODO: Trow Exception here? CONTINUE HERE!!! fråga om denna ska kasta exception eller returnera någonting av värde, samma med alla andra getvalue() metoder.
     public Double getValue()  {
-
+        throw new RuntimeException("Trying to get value from variable");
     }
 }

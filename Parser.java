@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class Parser {
     StreamTokenizer st;
     HashMap<Integer, String> variables = new HashMap<Integer, String>();
-    private String[] unary = {"-", "exp", "log", "sin", "cos"};
+    private String[] unary = {"exp", "log", "sin", "cos"};
 
 
     public Parser() {
@@ -15,7 +15,6 @@ public class Parser {
         st.ordinaryChar('-');
         st.ordinaryChar('/');
         st.eolIsSignificant(true);
-        //st.wordChars('-', '-');
     }
 
     public Sexpr statement() throws IOException {
@@ -82,7 +81,12 @@ public class Parser {
     }
 
     private Sexpr primary() throws IOException{
-        //System.out.println("Primary: " + st.toString());
+        ////System.out.println("Primary: " + st.toString());
+        if (st.nextToken() == '-') {
+            return new Negation(primary());
+        }
+        st.pushBack();
+
         Sexpr result;
         if(st.nextToken() != '('){
             st.pushBack();

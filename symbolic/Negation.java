@@ -9,10 +9,11 @@ public class Negation extends Unary {
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.negation(argument.eval(variables));
+        return Symbolic.negation(argument.eval(variables), variables);
     }
 
     public String getName() {
         return this.name;
     }
+
 }

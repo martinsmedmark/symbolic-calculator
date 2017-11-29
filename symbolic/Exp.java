@@ -9,7 +9,7 @@ public class Exp extends Unary {
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.exp(argument.eval(variables));
+        return Symbolic.exp(argument.eval(variables), variables);
     }
 
     public String getName() {

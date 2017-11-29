@@ -9,7 +9,7 @@ public class Cos extends Unary {
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.cos(argument.eval(variables));
+        return Symbolic.cos(argument.eval(variables), variables);
     }
 
     public String getName() {

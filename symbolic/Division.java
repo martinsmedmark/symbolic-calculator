@@ -15,7 +15,7 @@ public class Division extends Binary {
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-            return Symbolic.division(this.left.eval(variables), this.right.eval(variables));
+            return Symbolic.division(this.left.eval(variables), this.right.eval(variables), variables);
         }
     public String getName() {
             return this.name;

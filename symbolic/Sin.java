@@ -9,7 +9,7 @@ public class Sin extends Unary {
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.sin(argument.eval(variables));
+        return Symbolic.sin(argument.eval(variables), variables);
     }
 
     public String getName() {

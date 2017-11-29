@@ -2,7 +2,7 @@ clean:
 	rm -rf *.class *~ symbolic/*.class
 
 all:
-	javac *.java
+	javac *.java symbolic/*.java
 
 run:    all
 	java Calculator
