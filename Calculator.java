@@ -23,7 +23,7 @@ public class Calculator {
                         System.out.println(entry.getKey() + " : " + entry.getValue());
                     }
                 } else {
-                    System.out.println("Inläst uttryck: " + e);
+                    System.out.println("Inläst uttryck: "+  e);
                 }
 
                 e = e.eval(variables);

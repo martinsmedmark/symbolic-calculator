@@ -54,5 +54,4 @@ public class TestRunner{
         double d = (e.eval(variables)).getValue();
         assertEquals(d, 15.0, 0.001);
     }
-    public void 
 }
