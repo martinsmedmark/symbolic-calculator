@@ -1,6 +1,9 @@
 package symbolic;
 import java.util.HashMap;
 
+/**
+ * The division Sexpr class.
+ */
 public class Division extends Binary {
     private String name = "/";
 
@@ -8,7 +11,6 @@ public class Division extends Binary {
         super(l, r);
         this.priority = 0;
 
-        //this.logMessage(l.toString() + this.name + r.toString());
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {

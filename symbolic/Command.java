@@ -1,5 +1,8 @@
 package symbolic;
 
+/**
+ * The assignment Sexpr class.
+ */
 public abstract class Command extends Sexpr {
     public Command() {
         this.isConstant = false;

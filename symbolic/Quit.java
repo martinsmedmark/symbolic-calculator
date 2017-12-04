@@ -2,6 +2,9 @@ package symbolic;
 import java.io.IOException;
 import java.util.HashMap;
 
+/**
+ * The Sexpr class for the Quit Sexpr.
+ */
 public class Quit extends Command {
     private String name = "Quit";
 

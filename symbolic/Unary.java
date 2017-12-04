@@ -2,6 +2,9 @@ package symbolic;
 
 import java.io.IOException;
 
+/**
+ * The Sexpr class for unary Sexprs.
+ */
 public abstract class Unary extends Sexpr {
     protected Sexpr argument;
 
@@ -12,10 +15,10 @@ public abstract class Unary extends Sexpr {
         argument = a;
     }
 
-    public void logMessage(String message) {
-        System.out.println(message);
-    }
-
+    /**
+     * Returns the value of the unary.
+     * @return
+     */
     public Double getValue() {
         return argument.getValue();
     }

@@ -2,6 +2,9 @@ package symbolic;
 import java.util.HashMap;
 import java.io.IOException;
 
+/**
+ * The Sexpr class for the Variable Sexpr.
+ */
 public class Variable extends Atom {
     private String ident;
     private String name = "Variable";

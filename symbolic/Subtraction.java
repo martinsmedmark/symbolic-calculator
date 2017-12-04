@@ -3,6 +3,9 @@ package symbolic;
 import java.io.IOException;
 import java.util.HashMap;
 
+/**
+ * The Sexpr class for the Subtraction Sexpr.
+ */
 public class Subtraction extends Binary {
     private String name = "-";
 
@@ -10,7 +13,6 @@ public class Subtraction extends Binary {
         super(l, r);
         this.priority = 1;
 
-        //this.logMessage(l.toString() + this.name + r.toString());
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {

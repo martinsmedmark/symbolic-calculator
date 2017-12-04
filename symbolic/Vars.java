@@ -1,6 +1,9 @@
 package symbolic;
 import java.util.HashMap;
 
+/**
+ * The Sexpr class for the Vars Sexpr.
+ */
 public class Vars extends Command {
     private String name = "Vars";
 
