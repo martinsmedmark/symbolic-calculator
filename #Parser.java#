@@ -1,0 +1,174 @@
+import symbolic.*;
+import java.io.StreamTokenizer;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.HashMap;
+
+public class Parser {
+    StreamTokenizer st;
+    HashMap<Integer, String> variables = new HashMap<Integer, String>();
+    private String[] unary = {"exp", "log", "sin", "cos"};
+
+    //tells streamtokenizer what to expect
+    public Parser() {
+        st = new StreamTokenizer(System.in);
+        st.ordinaryChar('-');
+        st.ordinaryChar('/');
+        st.eolIsSignificant(true);
+    }
+
+    //actions quit or evaluate
+    public Sexpr statement() throws IOException {
+        if(st.nextToken() == st.TT_WORD) {
+            if (st.sval.equals("quit")) {
+                return new Quit();
+            } else if (st.sval.equals("vars")) {
+                return new Vars();
+            }
+        }
+        st.pushBack();
+        return assignment();
+    }
+    
+    //expression and identifier separated by =
+    public Sexpr assignment() throws IOException {
+        //System.out.println("Assignment: " + st.toString());
+        Sexpr expr = expression();
+        st.nextToken();
+        while (st.ttype == '=') {
+            Sexpr var = identifier();
+            st.nextToken();
+            expr = new Assignment(expr, var);
+        }
+        st.pushBack();
+        return expr;
+    }
+
+    //an expression is two terms separated by +/-
+    public Sexpr expression() throws IOException{
+        //System.out.println("Expression: " + st.toString());
+        //first term
+        Sexpr sum = term();
+        st.nextToken();
+        while (st.ttype == '+' || st.ttype == '-'){
+            if(st.ttype == '+'){
+                //sum second term
+                sum = new Addition (sum, term());
+            }else{
+                //sub second term
+                sum = new Subtraction(sum, term());
+            }
+            st.nextToken();
+        }
+        st.pushBack();
+        return sum;
+    }
+
+    //a term is two factors seperated by multiplication/division
+    private Sexpr term() throws IOException {
+        //System.out.println("Term: " + st.toString());
+        //first factor
+        Sexpr prod = factor();
+        st.nextToken();
+        while (st.ttype == '*' || st.ttype == '/') {
+            if(st.ttype == '*') {
+                //second factor mult
+                prod = new Multiplication(prod, factor());
+            } else {
+                //second faxtor div
+                prod = new Division(prod, factor());
+            }
+            st.nextToken();
+        }
+        st.pushBack();
+        return prod;
+    }
+
+    //contains primary
+    private Sexpr factor() throws IOException {
+        //System.out.println("Factor");
+        return primary();
+    }
+    
+    //some type of number or expression
+    private Sexpr primary() throws IOException{
+        ////System.out.println("Primary: " + st.toString());
+        if (st.nextToken() == '-') {
+            return new Negation(primary());
+        }
+        st.pushBack();
+
+        Sexpr result;
+        if(st.nextToken() != '('){
+            st.pushBack();
+            if (st.ttype == st.TT_NUMBER) {
+                result = number();
+            } else if (Arrays.asList(unary).contains(st.sval)) {
+                result = unary();
+            } else {
+                result = identifier();
+            }
+        }else{
+            result = assignment();
+            if(st.nextToken() != ')'){
+                throw new SyntaxErrorException("expected ')'");
+            }
+        }
+        return result;
+    }
+
+    //Depending on the type of unary we call the specifik class
+    private Sexpr unary() throws IOException {
+       //System.out.println("Unary: " + st.toString());
+        if (st.ttype != st.TT_WORD) {
+            throw new SyntaxErrorException("Expected unary");
+        }
+        st.nextToken();
+        String sval = st.sval;
+        Sexpr unary;
+        switch (sval) {
+            case "-":
+                unary = new Negation(primary());
+                break;
+            case "exp":
+                unary = new Exp(primary());
+                break;
+            case "log":
+                unary = new Log(primary());
+                break;
+            case "cos":
+                unary = new Cos(primary());
+                break;
+            default: unary = new Sin(primary());
+                break;
+        }
+        return unary;
+    }
+
+    private Sexpr identifier() throws IOException{
+        //System.out.println("Identifier: " + st.toString());
+        if(st.nextToken() != st.TT_WORD){
+            throw new SyntaxErrorException("Expected identifier");
+        }
+        return new Variable(st.sval);
+    }
+
+    private Sexpr number() throws IOException{
+        //System.out.println("Number: " + st.toString());
+        if(st.nextToken() != st.TT_NUMBER){
+            throw new SyntaxErrorException("Expected number");
+        }
+        return new Constant(st.nval);
+    }
+}
+
+class SyntaxErrorException extends RuntimeException {
+    public SyntaxErrorException() {
+        super();
+    }
+
+    public SyntaxErrorException(String msg) {
+        super(msg);
+    }
+
+}

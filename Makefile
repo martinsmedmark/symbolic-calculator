@@ -1,3 +1,10 @@
+
+compiletest:
+	javac -cp hamcrest-core-1.3.jar:junit-4.12.jar:. TestRunner.java
+
+runtests: compiletest
+	java -cp hamcrest-core-1.3.jar:junit-4.12.jar:. org.junit.runner.JUnitCore TestRunner
+
 clean:
 	rm -rf *.class *~ symbolic/*.class
 
