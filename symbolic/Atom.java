@@ -1,6 +1,6 @@
 package symbolic;
 
-public abstract class Atom extends Sexpr{
+public abstract class Atom extends Sexpr {
 
     public Atom() {
         this.priority = 0;

@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
 
+/*
+ *
+ */
 public class Parser {
     StreamTokenizer st;
     HashMap<Integer, String> variables = new HashMap<Integer, String>();
@@ -36,7 +39,7 @@ public class Parser {
         while (st.ttype == '=') {
             Sexpr var = identifier();
             st.nextToken();
-            expr = new Assignment(expr, var);
+            expr = new symbolic.Assignment(expr, var);
         }
         st.pushBack();
         return expr;
@@ -108,7 +111,7 @@ public class Parser {
 
 
     private Sexpr unary() throws IOException {
-       //System.out.println("Unary: " + st.toString());
+        //System.out.println("Unary: " + st.toString());
         if (st.ttype != st.TT_WORD) {
             throw new SyntaxErrorException("Expected unary");
         }
@@ -139,7 +142,7 @@ public class Parser {
         if(st.nextToken() != st.TT_WORD){
             throw new SyntaxErrorException("Expected identifier");
         }
-        return new Variable(st.sval);
+        return new symbolic.Variable(st.sval);
     }
 
     private Sexpr number() throws IOException{
@@ -147,7 +150,7 @@ public class Parser {
         if(st.nextToken() != st.TT_NUMBER){
             throw new SyntaxErrorException("Expected number");
         }
-        return new Constant(st.nval);
+        return new symbolic.Constant(st.nval);
     }
 }
 

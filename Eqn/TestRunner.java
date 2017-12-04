@@ -54,6 +54,7 @@ public class TestRunner{
         double d = (e.eval(variables)).getValue();
         assertEquals(d, 15.0, 0.001);
     }
+<<<<<<< HEAD:TestRunner.java
     public void testVars(){
         Sexpr e1 = new Constant(30);
         Sexpr e2 = new Sin(new Constant(30));
@@ -64,4 +65,6 @@ public class TestRunner{
         //  new Array(d1, d2, d3);
         //assertEquals()
     }
+=======
+>>>>>>> 71362df86c859202d6e35effec1ec78af1aac2ea:Eqn/TestRunner.java
 }

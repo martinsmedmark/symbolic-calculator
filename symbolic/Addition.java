@@ -9,11 +9,11 @@ public class Addition extends Binary {
         super(l, r);
         this.priority = 1;
 
-        //this.logMessage(l.toString() + this.name + r.toString());
+        this.logMessage(l.toString() + this.name + r.toString());
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.addition(left.eval(variables), right.eval(variables), variables);
+        return Symbolic.addition(this.left.eval(variables), right.eval(variables), variables);
     }
 
     public String getName() {
