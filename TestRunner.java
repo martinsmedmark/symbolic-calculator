@@ -54,5 +54,14 @@ public class TestRunner{
         double d = (e.eval(variables)).getValue();
         assertEquals(d, 15.0, 0.001);
     }
-    public void 
+    public void testVars(){
+        sexpr e1 = new Constant(30);
+        sexpr e2 = new Sin(Constant(30));
+        sexpr e3 = new Variable(Constant(30));
+        double d1 = (e1.eval(variables)).getValue();
+        double d2 = (e2.eval(variables)).getValue();
+        double d3 = (e3.eval(variables)).getValue();
+        new Array(d1, d2, d3);
+        assertEquals()
+    }
 }
