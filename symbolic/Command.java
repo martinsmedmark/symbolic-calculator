@@ -1,5 +1,8 @@
 package symbolic;
 
+/**
+ * The assignment Sexpr class.
+ */
 public abstract class Command extends Sexpr {
     public Command() {
         this.isConstant = false;
@@ -8,7 +11,7 @@ public abstract class Command extends Sexpr {
     }
 
     public Double getValue() {
-        return 42.0;
+        throw new RuntimeException("Trying to get value from a command");
     }
 
     public String toString() {

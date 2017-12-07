@@ -1,8 +1,10 @@
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
+import sun.nio.cs.StandardCharsets;
 import symbolic.*;
 import java.util.*;
+import java.io.*;
 import org.junit.After;
 //import org.junit.Test;
 
@@ -54,7 +56,7 @@ public class TestRunner{
         double d = (e.eval(variables)).getValue();
         assertEquals(d, 15.0, 0.001);
     }
-<<<<<<< HEAD:TestRunner.java
+
     public void testVars(){
         Sexpr e1 = new Constant(30);
         Sexpr e2 = new Sin(new Constant(30));
@@ -65,6 +67,30 @@ public class TestRunner{
         //  new Array(d1, d2, d3);
         //assertEquals()
     }
-=======
->>>>>>> 71362df86c859202d6e35effec1ec78af1aac2ea:Eqn/TestRunner.java
+
+    public void testParser() {
+        String testAddition = "1+1";
+
+        try {
+            InputStream stream = new ByteArrayInputStream(testAddition.getBytes("UTF-8"));
+
+            Parser p = new Parser(stream);
+
+            try {
+                Sexpr e = p.statement();
+                System.out.println("Read expression: "+  e);
+                assertEquals(e.toString(), "(1+1)");
+                
+            } catch (IOException e) {
+                System.out.print("IO Error: ");
+                System.out.println(e.getMessage());
+            }
+
+        } catch (UnsupportedEncodingException e){
+            System.out.print("Unsupported Encoding Error: ");
+            System.out.println(e.getMessage());
+        }
+
+
+    }
 }

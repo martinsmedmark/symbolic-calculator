@@ -2,8 +2,11 @@ package symbolic;
 import java.io.IOException;
 import java.util.HashMap;
 
+/**
+ * The assignment Sexpr class.
+ */
 public class Assignment extends Binary {
-    private String name = "=";
+    private final String name = "=";
 
     public Assignment(Sexpr l, Sexpr r) {
         super(l, r);

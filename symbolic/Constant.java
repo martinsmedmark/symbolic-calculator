@@ -2,9 +2,11 @@ package symbolic;
 
 import java.util.HashMap;
 
+/**
+ * The Constant Sexpr class.
+ */
 public class Constant extends Atom {
     private Double value;
-    private String name;
 
     public Constant(double d) {
         this.isConstant = true;

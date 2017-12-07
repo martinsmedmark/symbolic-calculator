@@ -2,14 +2,15 @@ package symbolic;
 import java.io.IOException;
 import java.util.HashMap;
 
+/**
+ * The Sexpr class for the Multiplication Sexpr.
+ */
 public class Multiplication extends Binary {
-    private String name = "*";
+    private final String name = "*";
 
     public Multiplication(Sexpr l, Sexpr r) {
         super(l, r);
         this.priority = 0;
-
-        //this.logMessage(l.toString() + this.name + r.toString());
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {

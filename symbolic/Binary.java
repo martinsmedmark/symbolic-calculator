@@ -1,5 +1,8 @@
 package symbolic;
 
+/**
+ * The Sexpr class for binary Sexprs.
+ */
 public abstract class Binary extends Sexpr {
     protected Sexpr left;
     protected Sexpr right;
@@ -11,10 +14,6 @@ public abstract class Binary extends Sexpr {
         this.right = right;
     }
 
-    public void logMessage(String message) {
-        System.out.println(message);
-    }
-
     @Override
     public String toString() {
         if (left.priority() <= right.priority()) {
@@ -23,5 +22,9 @@ public abstract class Binary extends Sexpr {
         return "(" + left.toString() + getName() + right.toString() + ")";
     }
 
+    /**
+     * Returns the value of the binary.
+     * @return
+     */
     public Double getValue() { throw new RuntimeException("Trying to get value from a binary"); }
 }
