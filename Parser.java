@@ -1,4 +1,6 @@
 import symbolic.*;
+
+import java.io.InputStream;
 import java.io.StreamTokenizer;
 import java.io.IOException;
 import java.util.Arrays;
@@ -12,8 +14,8 @@ public class Parser {
     private String[] unary = {"exp", "log", "sin", "cos"};
 
 
-    public Parser() {
-        st = new StreamTokenizer(System.in);
+    public Parser(InputStream in) {
+        st = new StreamTokenizer(in);
         st.ordinaryChar('-');
         st.ordinaryChar('/');
         st.eolIsSignificant(true);

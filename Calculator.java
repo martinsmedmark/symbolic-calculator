@@ -12,7 +12,7 @@ public class Calculator {
         System.out.println("Welcome to the symbolic-calculator!");
 
         while (true) {
-            Parser p = new Parser();
+            Parser p = new Parser(System.in);
 
             System.out.print("? ");
             try {

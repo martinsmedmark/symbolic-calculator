@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2811dd10-be67-4021-8eb9-c03b5b12a34e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Calculator.java" afterPath="$PROJECT_DIR$/Calculator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Eqn/TestRunner.java" afterPath="$PROJECT_DIR$/Eqn/TestRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Parser.java" afterPath="$PROJECT_DIR$/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Addition.java" afterPath="$PROJECT_DIR$/symbolic/Addition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Assignment.java" afterPath="$PROJECT_DIR$/symbolic/Assignment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Command.java" afterPath="$PROJECT_DIR$/symbolic/Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Constant.java" afterPath="$PROJECT_DIR$/symbolic/Constant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Cos.java" afterPath="$PROJECT_DIR$/symbolic/Cos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Division.java" afterPath="$PROJECT_DIR$/symbolic/Division.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Exp.java" afterPath="$PROJECT_DIR$/symbolic/Exp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Log.java" afterPath="$PROJECT_DIR$/symbolic/Log.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Multiplication.java" afterPath="$PROJECT_DIR$/symbolic/Multiplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Negation.java" afterPath="$PROJECT_DIR$/symbolic/Negation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Quit.java" afterPath="$PROJECT_DIR$/symbolic/Quit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Sexpr.java" afterPath="$PROJECT_DIR$/symbolic/Sexpr.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Sin.java" afterPath="$PROJECT_DIR$/symbolic/Sin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Subtraction.java" afterPath="$PROJECT_DIR$/symbolic/Subtraction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Symbolic.java" afterPath="$PROJECT_DIR$/symbolic/Symbolic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Variable.java" afterPath="$PROJECT_DIR$/symbolic/Variable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symbolic/Vars.java" afterPath="$PROJECT_DIR$/symbolic/Vars.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,15 +22,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="36" column="42" lean-forward="true" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+            <state relative-caret-position="87">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#211#226#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Eqn/TestRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1794">
+              <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,7 +87,6 @@
         <option value="$PROJECT_DIR$/symbolic/Atom.java" />
         <option value="$PROJECT_DIR$/symbolic/Sexpr.java" />
         <option value="$PROJECT_DIR$/symbolic/Constant.java" />
-        <option value="$PROJECT_DIR$/Parser.java" />
         <option value="$PROJECT_DIR$/symbolic/Variable.java" />
         <option value="$PROJECT_DIR$/symbolic/Addition.java" />
         <option value="$PROJECT_DIR$/symbolic/Assignment.java" />
@@ -98,7 +102,9 @@
         <option value="$PROJECT_DIR$/symbolic/Vars.java" />
         <option value="$PROJECT_DIR$/symbolic/Symbolic.java" />
         <option value="$PROJECT_DIR$/symbolic/Command.java" />
+        <option value="$PROJECT_DIR$/Parser.java" />
         <option value="$PROJECT_DIR$/Calculator.java" />
+        <option value="$PROJECT_DIR$/Eqn/TestRunner.java" />
       </list>
     </option>
   </component>
@@ -128,8 +134,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,7 +147,7 @@
             <path>
               <item name="symbolic-calculator" type="b2602c69:ProjectViewProjectNode" />
               <item name="symbolic-calculator" type="462c0819:PsiDirectoryNode" />
-              <item name="symbolic" type="462c0819:PsiDirectoryNode" />
+              <item name="Eqn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="symbolic-calculator" type="b2602c69:ProjectViewProjectNode" />
@@ -151,8 +158,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,11 +287,12 @@
       <workItem from="1512391607702" duration="8470000" />
       <workItem from="1512638553004" duration="1447000" />
       <workItem from="1512643509498" duration="953000" />
+      <workItem from="1512648658707" duration="2583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46769000" />
+    <option name="totallyTimeSpent" value="49352000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
@@ -298,8 +305,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -309,8 +316,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -330,24 +337,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/symbolic/Symbolic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="43" column="58" lean-forward="false" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symbolic/Variable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/symbolic/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -360,9 +349,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3427">
           <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -433,9 +420,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3082">
           <caret line="138" column="5" lean-forward="true" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -467,9 +452,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2898">
           <caret line="130" column="5" lean-forward="false" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -504,9 +487,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -671,16 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="205" column="5" lean-forward="true" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/symbolic/Symbolic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -699,13 +670,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Eqn/EqnTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="36" column="42" lean-forward="true" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+        <state relative-caret-position="87">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#211#226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eqn/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
