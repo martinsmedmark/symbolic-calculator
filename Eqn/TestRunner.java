@@ -56,7 +56,8 @@ public class TestRunner{
         double d = (e.eval(variables)).getValue();
         assertEquals(d, 15.0, 0.001);
     }
-
+	
+    @Test
     public void testVars(){
         Sexpr e1 = new Constant(30);
         Sexpr e2 = new Sin(new Constant(30));
@@ -68,6 +69,7 @@ public class TestRunner{
         //assertEquals()
     }
 
+    @Test
     public void testParser() {
         String testAddition = "1+1";
 
