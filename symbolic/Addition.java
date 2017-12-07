@@ -6,7 +6,7 @@ import java.util.HashMap;
  * The addition Sexpr class.
  */
 public class Addition extends Binary {
-    private String name = "+";
+    private final String name = "+";
 
     public Addition(Sexpr l, Sexpr r) {
         super(l, r);

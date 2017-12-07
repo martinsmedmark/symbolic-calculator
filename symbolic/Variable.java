@@ -7,8 +7,7 @@ import java.io.IOException;
  */
 public class Variable extends Atom {
     private String ident;
-    private String name = "Variable";
-    private HashMap<String, Sexpr> variables;
+    private final String name = "Variable";
 
     public Variable(String s) {
         this.ident = s;
@@ -17,7 +16,6 @@ public class Variable extends Atom {
     }
 
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        this.variables = variables;
         return Symbolic.variable(this, variables);
     }
 

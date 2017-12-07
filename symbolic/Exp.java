@@ -5,7 +5,7 @@ import java.util.HashMap;
  * The Sexpr class for the Exp Sexpr.
  */
 public class Exp extends Unary {
-    private String name = "Exp";
+    private final String name = "Exp";
 
     public Exp(Sexpr a) {
         super(a);

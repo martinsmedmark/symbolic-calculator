@@ -6,7 +6,7 @@ import java.util.HashMap;
  * The Sexpr class for the Multiplication Sexpr.
  */
 public class Multiplication extends Binary {
-    private String name = "*";
+    private final String name = "*";
 
     public Multiplication(Sexpr l, Sexpr r) {
         super(l, r);

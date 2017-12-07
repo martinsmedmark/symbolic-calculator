@@ -5,7 +5,7 @@ import java.util.HashMap;
  * The cos Sexpr class.
  */
 public class Cos extends Unary {
-    private String name = "Cos";
+    private final String name = "Cos";
 
     public Cos(Sexpr a) {
         super(a);

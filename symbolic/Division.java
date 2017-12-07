@@ -5,7 +5,7 @@ import java.util.HashMap;
  * The division Sexpr class.
  */
 public class Division extends Binary {
-    private String name = "/";
+    private final String name = "/";
 
     public Division(Sexpr l, Sexpr r) {
         super(l, r);

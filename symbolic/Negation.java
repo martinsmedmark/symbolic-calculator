@@ -5,7 +5,7 @@ import java.util.HashMap;
  * The Sexpr class for the Negation Sexpr.
  */
 public class Negation extends Unary {
-    private String name = "Negation";
+    private final String name = "Negation";
 
     public Negation(Sexpr a) {
         super(a);

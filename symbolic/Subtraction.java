@@ -7,7 +7,7 @@ import java.util.HashMap;
  * The Sexpr class for the Subtraction Sexpr.
  */
 public class Subtraction extends Binary {
-    private String name = "-";
+    private final String name = "-";
 
     public Subtraction(Sexpr l, Sexpr r) {
         super(l, r);

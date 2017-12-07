@@ -9,7 +9,6 @@ import java.util.HashMap;
  */
 public class Parser {
     StreamTokenizer st;
-    HashMap<Integer, String> variables = new HashMap<Integer, String>();
     private String[] unary = {"exp", "log", "sin", "cos"};
 
 

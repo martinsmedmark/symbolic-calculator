@@ -5,7 +5,7 @@ import java.util.HashMap;
  * The Sexpr class for Log Sexprs.
  */
 public class Log extends Unary {
-    private String name = "Log";
+    private final String name = "Log";
 
     public Log(Sexpr a) {
         super(a);

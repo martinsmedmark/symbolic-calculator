@@ -7,7 +7,6 @@ import java.util.HashMap;
  */
 public class Constant extends Atom {
     private Double value;
-    private String name;
 
     public Constant(double d) {
         this.isConstant = true;

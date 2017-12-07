@@ -168,7 +168,6 @@ public class Symbolic {
      * @return new assignment.
      */
     public static Sexpr assignment(Sexpr arg1, Sexpr arg2, HashMap<String, Sexpr> variables) {
-        System.out.println("assignment");
         if (arg2.isVariable()) {
             variables.put(arg2.getName(), arg1);
         }
@@ -182,7 +181,6 @@ public class Symbolic {
      * @return the corresponding value of arg if one is found in the hashmap, else arg.
      */
     public static Sexpr variable(Sexpr arg, HashMap<String, Sexpr> variables) {
-        System.out.println("variable");
         if (!arg.isVariable()) {
             throw new RuntimeException("Expected variable");
         }

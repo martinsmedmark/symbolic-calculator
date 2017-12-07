@@ -6,7 +6,7 @@ import java.io.IOException;
  * The main function running the program.
  */
 public class Calculator {
-    public static HashMap<String, Sexpr> variables = new HashMap<String, Sexpr>();
+    static final HashMap<String, Sexpr> variables = new HashMap<String, Sexpr>();
 
     public static void main(String[] args) throws IOException {
         System.out.println("Welcome to the symbolic-calculator!");
@@ -26,17 +26,16 @@ public class Calculator {
                         System.out.println(entry.getKey() + " : " + entry.getValue());
                     }
                 } else {
-                    System.out.println("Inläst uttryck: "+  e);
-                    if(e.toString().equals("(2.0+2.0-1.0)")) {
-                        System.out.println("2+2 is 4 minus 1 thats 3 QUICK MAFFS!");
-                    } else {
-                        e = e.eval(variables);
-                        System.out.println("Evaluerat: " + e);
-                    }
+                    System.out.println("Read expression: "+  e);
+                    e = e.eval(variables);
+                    System.out.println("Evaluated: " + e);
                 }
 
             } catch (SyntaxErrorException e) {
                 System.out.print("Syntax Error: ");
+                System.out.println(e.getMessage());
+            } catch (RuntimeException e) {
+                System.out.println("Runtime Error: ");
                 System.out.println(e.getMessage());
             }
         }

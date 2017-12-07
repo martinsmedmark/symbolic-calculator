@@ -11,7 +11,6 @@ public abstract class Sexpr {
     protected int priority;
 
     public Sexpr() {
-
     }
 
     public abstract String getName();
