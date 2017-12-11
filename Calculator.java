@@ -1,5 +1,5 @@
 import java.util.*;
-import symbolic.Sexpr;
+import symbolic.*;
 import java.io.IOException;
 
 /**
@@ -7,21 +7,20 @@ import java.io.IOException;
  */
 public class Calculator {
     static final HashMap<String, Sexpr> variables = new HashMap<String, Sexpr>();
+    private static boolean quit = false;
 
     public static void main(String[] args) throws IOException {
         System.out.println("Welcome to the symbolic-calculator!");
+        boolean quit = false;
 
-        while (true) {
+        while (!quit) {
             Parser p = new Parser(System.in);
 
             System.out.print("? ");
             try {
                 Sexpr e = p.statement();
 
-                if (e.getName().equals("Quit")) {
-                    System.out.println("\n Goodbye!");
-                    System.exit(0);
-                } else if (e.getName().equals("Vars")) {
+                if (e.getName().equals("Vars")) {
                     for (Map.Entry<String, Sexpr> entry : variables.entrySet()) {
                         System.out.println(entry.getKey() + " : " + entry.getValue());
                     }
@@ -30,13 +29,12 @@ public class Calculator {
                     e = e.eval(variables);
                     System.out.println("Evaluated: " + e);
                 }
-
             } catch (SyntaxErrorException e) {
                 System.out.print("Syntax Error: ");
                 System.out.println(e.getMessage());
-            } catch (RuntimeException e) {
-                System.out.println("Runtime Error: ");
-                System.out.println(e.getMessage());
+            } catch (QuitException e) {
+                System.out.print("Goodbye!\n");
+                quit = true;
             }
         }
     }

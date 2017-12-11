@@ -16,6 +16,6 @@ public class Quit extends Command {
         return name;
     }
     public Sexpr eval(HashMap<String, Sexpr> variables) {
-        return Symbolic.quit(this);
+        throw new QuitException();
     }
 }

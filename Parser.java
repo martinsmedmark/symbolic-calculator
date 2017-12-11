@@ -150,9 +150,9 @@ public class Parser {
             throw new SyntaxErrorException("Expected unary");
         }
         st.nextToken();
-        String sval = st.sval;
         Sexpr unary;
-        switch (sval) {
+
+        switch (st.sval) {
             case "-":
                 unary = new Negation(primary());
                 break;
